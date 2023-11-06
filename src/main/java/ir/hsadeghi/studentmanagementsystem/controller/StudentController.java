@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Comparator;
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -16,7 +18,12 @@ public class StudentController {
 
     @GetMapping("/students")
     public String listStudents(Model model) {
-        model.addAttribute("students", studentService.getAllStudent());
+        List<Student> students = studentService.getAllStudent();
+
+        // Sort the list by Student ID
+        students.sort(Comparator.comparing(Student::getId));
+
+        model.addAttribute("students", students);
         return "students";
     }
 
