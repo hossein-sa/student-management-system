@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -19,7 +20,17 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student saveStudent(Student student) {
-        return studentRepository.save(student);
+    public void saveStudent(Student student) {
+        studentRepository.save(student);
+    }
+
+    @Override
+    public Optional<Student> getStudentById(Long id) {
+        return studentRepository.findById(id);
+    }
+
+    @Override
+    public void updateStudent(Student student) {
+        studentRepository.save(student);
     }
 }
