@@ -24,7 +24,8 @@ Maven is used for project build and dependency management. It simplifies the bui
 ## Layout
 
 The user interface of the Student Management System is designed in Persian and follows the Right-to-Left (RTL) layout, providing a native experience for Persian-speaking users.
-Getting Started
+
+## Getting Started
 
 To get started with this project, follow these steps:
 
