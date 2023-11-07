@@ -9,9 +9,9 @@ The following technologies have been utilized in this project:
 1.   Spring Boot: A powerful and flexible framework for building Java applications.
 2.   Spring Data JPA: Part of the Spring Data project, it simplifies database access and manipulation.
 3.   Spring Web: For building web applications and RESTful services.
-4.   Thymeleaf: A server-side template engine that simplifies HTML template creation.
-5.   Bootstrap: Bootstrap is a front-end framework for creating stylish and responsive web applications.
-6.   Spring Boot Devtools: Tools that enhance the development experience, including automatic application restarts.
+4.   Spring Boot Devtools: Tools that enhance the development experience, including automatic application restarts.
+5.   Thymeleaf: A server-side template engine that simplifies HTML template creation.
+6.   Bootstrap: Bootstrap is a front-end framework for creating stylish and responsive web applications.
 
 ## Database
 
